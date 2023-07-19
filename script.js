@@ -13,14 +13,14 @@
 
 let usernames = ["Nurbek", "Sunnat", "Javohir", "Rustam"];
 
-function checkAvailability() {
-  const username = document.getElementById('usernameInput').value;
+function tekshir() {
+  const username = document.getElementById('username').value;
   const isAvailable = isUsernameAvailable(username);
 
-  const messageElement = document.getElementById('availabilityMessage');
-  messageElement.textContent = isAvailable
-    ? 'This username is available'
-    : 'This username has already been taken';
+  const message = document.getElementById('natija');
+  message.textContent = isAvailable
+    ? 'This username is available.'
+    : 'This username has already been taken.';
 }
 
 function isUsernameAvailable(username) {
