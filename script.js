@@ -4,9 +4,9 @@ function validate() {
 
     var names = ["Nurbek", "Sunnat", "Javohir", "Rustam"];
     if (names.includes(username)) {
-        messagel.innerHTML = "Username has already been taken";
+        messagel.innerHTML = "Username has already been taken.";
     }
     else{
-        messagel.innerHTML = "Username is available";
+        messagel.innerHTML = "Username is available.";
     }
 }
