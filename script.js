@@ -15,7 +15,7 @@ let usernames = ["Nurbek", "Sunnat", "Javohir", "Rustam"];
 
 function tekshir() {
   const username = document.getElementById('username').value;
-  const isAvailable = isUsernameAvailable(username);
+  const isAvailable = ism(username);
 
   const message = document.getElementById('natija');
   message.textContent = isAvailable
@@ -23,7 +23,7 @@ function tekshir() {
     : 'This username has already been taken.';
 }
 
-function isUsernameAvailable(username) {
+function ism(username) {
   for (let name of usernames) {
     if (name === username) {
       return false;
