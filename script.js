@@ -18,3 +18,4 @@ function isUsernameAvailable(username) {
   }
   usernames.push(username); // Save the username
   return true; // Username is available
+}
