@@ -11,7 +11,7 @@
 //     }
 // }
 
-let names = ["Nurbek", "Sunnat", "Javohir", "Rustam"];
+let names = [];
 
 function tekshir() {
   const username = document.getElementById('username').value;
