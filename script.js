@@ -11,7 +11,7 @@
 //     }
 // }
 
-let usernames = ["Nurbek", "Sunnat", "Javohir", "Rustam"];
+let names = ["Nurbek", "Sunnat", "Javohir", "Rustam"];
 
 function tekshir() {
   const username = document.getElementById('username').value;
@@ -24,7 +24,7 @@ function tekshir() {
 }
 
 function ism(username) {
-  for (let name of usernames) {
+  for (let name of names) {
     if (name === username) {
       return false;
         }
