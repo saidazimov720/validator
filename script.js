@@ -13,9 +13,9 @@ function checkAvailability() {
 function isUsernameAvailable(username) {
   for (let name of usernames) {
     if (name === username) {
-      return false; // Username already exists
-    }
+      return false;
+        }
   }
-  usernames.push(username); // Save the username
-  return true; // Username is available
+  usernames.push(username);
+  return true; 
 }
