@@ -1,21 +1,21 @@
-let usernames = [];
+let names = [];
 
-function checkAvailability() {
+function tekshir() {
   const username = document.getElementById('usernameInput').value;
-  const isAvailable = isUsernameAvailable(username);
+  const isAvailable = ismlar(username);
 
   const messageElement = document.getElementById('availabilityMessage');
   messageElement.textContent = isAvailable
-    ? 'This username is available'
-    : 'This username has already been taken';
+    ? 'This username is available.'
+    : 'This username has already been taken.';
 }
 
-function isUsernameAvailable(username) {
-  for (let name of usernames) {
-    if (name === username) {
-      return false; // Username already exists
+function ismlar(username) {
+  for (let ism of names) {
+    if ( ism === username) {
+      return false; 
     }
   }
-  usernames.push(username); // Save the username
-  return true; // Username is available
+  names.push(username); 
+  return true; 
 }
