@@ -1,12 +1,12 @@
 function validate() {
     var username = document.getElementById("username").value;
-    var messagel = document.getElementById("message");
+    var message = document.getElementById("message");
 
     var names = ["Nurbek", "Sunnat", "Javohir", "Rustam"];
     if (names.includes(username)) {
-        messagel.innerHTML = "Username has already been taken.";
+        message.innerHTML = "Username has already been taken.";
     }
     else{
-        messagel.innerHTML = "Username is available.";
+        message.innerHTML = "Username is available.";
     }
 }
